@@ -19,7 +19,7 @@ class CatalogoPeliculas:
     def listar_peliculas():
         try:
             archivo = open(CatalogoPeliculas.ruta_archivo, "r")
-            print("Catalogo de Peliculas:")
+            print("Catalogo de Peliculas: \n")
             print(archivo.read())
         except Exception as e:
             print("Ocurrio un error al listar peliculas: ", e)
